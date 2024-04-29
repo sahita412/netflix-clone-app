@@ -1,0 +1,105 @@
+$header-bg-color:#111111;
+
+.banner{
+    height: 600px;
+    // padding: 1rem 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    >h1,p{
+        color: white;
+        font-size: 3rem;
+        width: 50%;
+        z-index: 10;
+        margin-left: 1rem;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    div{
+        display: flex;
+    }
+    button{
+        padding: 1rem;
+        // background-color: white;
+        outline: none;
+        border: none;
+        z-index: 10;
+        width: 150px;
+        border-radius: 5px;
+        margin: 1rem;
+        // height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        cursor: pointer;
+        svg{
+            font-size: 1.6rem;
+            margin-right: 1rem;
+            background-color: transparent;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+.row{
+    padding: 1rem 2rem;
+    background-color: #111111;
+    >h2{
+        font-weight: 400;
+        color: white;
+    }
+    >div{
+        display: flex;
+        justify-content: space-evenly;
+        overflow-x: auto;
+        padding: 1rem 0 0 0;
+    }
+}
+
+.card{
+    width: 200px;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover{
+        transform: translateY(-8px) scale(1.04);
+    }
+}
+
+.genreBox{
+    display: flex;
+    height: 100px;
+    overflow-x: auto;
+    background-color: #111111;
+    padding: 0 1rem;
+    >a{
+        color: #111111;
+        background-color: white;
+        padding: 1rem 0;
+        margin: 1rem;
+        border-radius: 5px;
+        transition: all 0.3s;
+        min-width: 8rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: rgb(162, 162, 162);
+        }
+    }
+}
+
